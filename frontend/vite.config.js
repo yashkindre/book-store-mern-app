@@ -4,5 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-    base: "/book-store-mern-app/",
+  build: {
+    outDir: 'dist', // Ensures output is in dist folder
+  },
 })
