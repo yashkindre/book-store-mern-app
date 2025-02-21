@@ -12,7 +12,7 @@ console.log("DB_URL:", process.env.DB_URL);
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173','https://book-store-ma3tdonxt-yash-kindres-projects.vercel.app/'],
+    origin: ['http://localhost:5173','https://book-store-mern-app-bqaj.vercel.app/'],
     credentials: true
 }));
 
