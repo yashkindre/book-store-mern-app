@@ -13,12 +13,16 @@ const  baseQuery = fetchBaseQuery({
     }
 })
 
+
+
 const booksApi = createApi({
+    
     reducerPath: 'booksApi',
     baseQuery,
     tagTypes: ['Books'],
     endpoints: (builder) =>({
         fetchAllBooks: builder.query({
+            
             query: () => "/",
             providesTags: ["Books"]
         }),
